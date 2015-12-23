@@ -13,8 +13,7 @@ function updateDataFromFile(filePath , outputArray){
     var areaName = rowDataArray[3];
 
     if(!hits[areaName]){
-     // var record = getRecordByName(rowDataArray[3] , outputArray);
-    
+     
       if(stateLiteracyObj[areaName] != null){
 
         var record = stateLiteracyObj[areaName];
@@ -34,11 +33,8 @@ function updateDataFromFile(filePath , outputArray){
         tempArray["literateMales"]= rowDataArray[13];
         tempArray["literateFemales"]= rowDataArray[14];
    
-        
-        var stateRecord = {};
         stateLiteracyObj[areaName] = tempArray;
-    
-
+   
         hits[areaName] = true;
       }
     }
@@ -46,20 +42,17 @@ function updateDataFromFile(filePath , outputArray){
 
 }
 updateDataFromFile("includes/India2011.csv" , stateLiteracyObj);
-
 updateDataFromFile("includes/IndiaSC2011.csv" , stateLiteracyObj);
-
 updateDataFromFile("includes/IndiaST2011.csv" , stateLiteracyObj);
 
 //removes the items 
 delete stateLiteracyObj["Area Name"];
 delete stateLiteracyObj["undefined"];
-//console.log(stateLiteracyObj);
-//var maleLiteracyObj = generateMaleLiteracy(stateLiteracyObj);
-var totalLiteracyObj =  {};
+
+var totalLiteracyObj =  [];
 var neStates = ["State - ARUNACHAL PRADESH" , "State - NAGALAND" , "State - MANIPUR", "State - MIZORAM" , "State - TRIPURA" , "State - MEGHALAYA" , "State - ASSAM"];
-var neStatesLiteracyObj= {};
-var stateWiseLiteracyObj = {};
+var neStatesLiteracyObj= [];
+var stateWiseLiteracyObj = [];
 
 function generateTotalLiteracy(stateLiteracyObj){
 
@@ -85,21 +78,22 @@ function generateTotalLiteracy(stateLiteracyObj){
     }
 
     var stateObj = {};
+    stateObj.areaName = key;
     stateObj.totalLiterate = value.literateMales + value.literateFemales;
     stateObj.totalIlliterate = value.illiterateMales + value.illiterateFemales;
 
-    stateWiseLiteracyObj[key] = stateObj;
+    stateWiseLiteracyObj.push( stateObj);
   }
 
-  totalLiteracyObj.totalLiterateMales = literateMales;
-  totalLiteracyObj.totalIlliterateMales = illiterateMales ;
-  totalLiteracyObj.totalLiterateFemales = literateFemales ;
-  totalLiteracyObj.totalIlliterateFemales = illiterateFemales ;
+  totalLiteracyObj.push({"category": "Literate Male" , "population" : literateMales});
+  totalLiteracyObj.push({"category": "Illiterate Male" , "population" : illiterateMales});
+  totalLiteracyObj.push({"category": "Literate Female" , "population" : literateFemales});
+  totalLiteracyObj.push({"category": "Illiterate Female" , "population" : illiterateFemales});
 
-  neStatesLiteracyObj.neLiterateMales = neLiterateMales;
-  neStatesLiteracyObj.neIlliterateMales = neIlliterateMales;
-  neStatesLiteracyObj.neLiterateFemales = neLiterateFemales;
-  neStatesLiteracyObj.neIlliterateFemales = neIlliterateFemales;
+  neStatesLiteracyObj.push({"category": "Literate Male" , "population" : neLiterateMales});
+  neStatesLiteracyObj.push({"category": "Illiterate Male" , "population" : neIlliterateMales});
+  neStatesLiteracyObj.push({"category": "Literate Female" , "population" : neLiterateFemales});
+  neStatesLiteracyObj.push({"category": "Illiterate Female" , "population" : neIlliterateFemales});
 
 }
 

@@ -1,0 +1,91 @@
+
+body {
+  
+  background-color: #ecf2f6;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: blue;
+}
+
+.bar:hover {
+  fill: orange ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+#legendText{
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+#categoryText {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar>.container .navbar-brand{
+   padding: 0;
+   margin-left:0px;
+}
+.navbar-fixed-top{
+   background-color: #32566f;
+}
+
+.navbar-brand h2{
+  color: #fff;
+  margin : 5px 0 0;
+  padding: 0;
+}
+
+.navbar-nav>li>a{
+   color: rgba(255, 255, 255, 0.8);
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.nav>li>a:focus, 
+.nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover,
+.navbar-nav>.active>a, 
+.navbar-nav>.active>a:focus, 
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus, 
+.navbar-nav>.active>a:hover
+ {
+   background-color: #32566f;
+   font-size: 16px;
+   font-weight: bold;
+   color: rgba(255, 255, 255, 1);
+}
+.row {
+  margin:0;
+  padding: 5px 0;
+}
+
+.row h4{
+  margin:60px  0 0 110px ;
+}

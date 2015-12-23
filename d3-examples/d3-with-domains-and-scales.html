@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="includes/scripts/d3.js"></script>
+  <meta charset="utf-8">
+  <title>D3 with Scales & Ranges</title>
+</head>
+<body>
+	<svg width="700" height="500"></svg>
+	<script>
+
+		var data = [1 ,2,3,4,5]
+		var scale = d3.scale.linear()
+		.domain([1 ,5])
+		.range([1, 20]);
+
+		//Bind Data
+		var circles = d3.select("svg").selectAll("circle").data(data);
+
+		//Enter 
+		circles.enter().append("circle").attr("r" , 10).attr("fill" , "brown");;
+
+		//update	
+		circles.attr("cx" , function(d){ return scale(d*20);})
+		.attr("cy" , function(d){ return scale(d*3);});
+
+		//Exit
+		circles.exit().remove();
+
+
+
+	</script>
+</body>
+</html>
