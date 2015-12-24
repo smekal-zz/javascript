@@ -10,9 +10,11 @@
       });
 
       function dataViz(inputData) {
-
-          
-
+          var totalPopulation =0;
+              inputData.forEach(function(data , index){
+                  totalPopulation+= data.population;
+              });
+        
           var width = 1300,
               height = 500,
               radius = Math.min(width, height) / 2;
@@ -58,7 +60,8 @@
               })
               .attr("dy", ".35em")
               .text(function(d) {
-                  return d.data.category + " :" + d.data.population;
+                  var ratio = d3.format(",.2%")((d.data.population/totalPopulation));
+                  return d.data.category + " :" + ratio;
               });
 
       }
