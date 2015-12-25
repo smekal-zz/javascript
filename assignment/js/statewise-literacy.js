@@ -53,9 +53,7 @@
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var xScale = d3.scale.ordinal()
-      .domain(layers[0].map(function(d) {
-      return d.x;
-    }))
+      .domain(layers[0].map(function(d) { return d.x; }))
       .rangeRoundBands([25, width], .1);
 
     var y = d3.scale.linear()

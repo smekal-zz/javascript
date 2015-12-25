@@ -1,0 +1,131 @@
+
+body {
+  
+  background-color: #ecf2f6;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #8a89a6;
+}
+
+.bar:hover {
+  fill: #a05d56 ;
+}
+
+.x.axis path {
+  display: none;
+}
+
+#legendText{
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+#categoryText {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  font-size: :10px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 1.5px;
+}
+
+.lineText {
+  padding: 10px;
+  margin: 10px;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar>.container .navbar-brand{
+   padding: 0;
+   margin-left:0px;
+}
+.navbar-fixed-top{
+   background-color: #ecb014;
+}
+
+.navbar-brand h2{
+  color: #fff;
+  margin : 5px 0 0;
+  padding: 0;
+}
+
+.navbar-nav>li>a{
+   color: rgba(255, 255, 255, 0.8);
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.nav>li>a:focus, 
+.nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover,
+.navbar-nav>.active>a, 
+.navbar-nav>.active>a:focus, 
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus, 
+.navbar-nav>.active>a:hover
+ {
+   background-color: #ecb014;
+   font-size: 16px;
+   font-weight: bold;
+   color: rgba(255, 255, 255, 1);
+}
+.row {
+  margin:0;
+  padding: 5px 0;
+}
+
+.row h4{
+  margin:60px  0 0 110px ;
+}

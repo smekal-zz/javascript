@@ -1,1 +1,190 @@
-[{"country":"Algeria","landAreaPercentage":3.14979804680612},{"country":"Angola","landAreaPercentage":3.28868212079891},{"country":"Benin","landAreaPercentage":22.5257183398368},{"country":"Botswana","landAreaPercentage":0.457007746193072},{"country":"Burundi","landAreaPercentage":36.993769470405},{"country":"Cameroon","landAreaPercentage":13.1158638488714},{"country":"Central African Republic","landAreaPercentage":2.88933834151979},{"country":"Chad","landAreaPercentage":3.57369758576874},{"country":"Comoros","landAreaPercentage":34.9274583557227},{"country":"Djibouti","landAreaPercentage":0.0690250215703192},{"country":"Equatorial Guinea","landAreaPercentage":4.27807486631016},{"country":"Eritrea","landAreaPercentage":6.83168316831683},{"country":"Ethiopia","landAreaPercentage":14.565},{"country":"Gabon","landAreaPercentage":1.26130321729344},{"country":"Ghana","landAreaPercentage":20.3041223521139},{"country":"Guinea","landAreaPercentage":11.8020511150903},{"country":"Guinea-Bissau","landAreaPercentage":10.6685633001422},{"country":"Kenya","landAreaPercentage":9.66370313103982},{"country":"Lesotho","landAreaPercentage":10.6060606060606},{"country":"Liberia","landAreaPercentage":4.98338870431894},{"country":"Libya","landAreaPercentage":0.975254896166043},{"country":"Madagascar","landAreaPercentage":6.01850259655398},{"country":"Malawi","landAreaPercentage":39.2448027153161},{"country":"Mali","landAreaPercentage":5.13116809677181},{"country":"Mauritania","landAreaPercentage":0.436596487823809},{"country":"Mauritius","landAreaPercentage":39.4088669950739},{"country":"Morocco","landAreaPercentage":17.3186197624916},{"country":"Mozambique","landAreaPercentage":7.18482158752766},{"country":"Namibia","landAreaPercentage":0.971711061715799},{"country":"Niger","landAreaPercentage":11.9207389279229},{"country":"Nigeria","landAreaPercentage":36.2330775058467},{"country":"Rwanda","landAreaPercentage":45.5581678151601},{"country":"Sao Tome and Principe","landAreaPercentage":8.85416666666667},{"country":"Senegal","landAreaPercentage":19.9968836025554},{"country":"Seychelles","landAreaPercentage":1.95652173913044},{"country":"Sierra Leone","landAreaPercentage":21.8949847603214},{"country":"Somalia","landAreaPercentage":1.75343513884018},{"country":"South Africa","landAreaPercentage":10.331467574541},{"country":"South Sudan","landAreaPercentage":0},{"country":"Sudan","landAreaPercentage":7.93686868686869},{"country":"Swaziland","landAreaPercentage":10.1744186046512},{"country":"Tanzania","landAreaPercentage":13.0955068864303},{"country":"Togo","landAreaPercentage":45.2289023717595},{"country":"Tunisia","landAreaPercentage":18.1707003089598},{"country":"Uganda","landAreaPercentage":33.6624775583483},{"country":"Zambia","landAreaPercentage":4.5736423680706},{"country":"Zimbabwe","landAreaPercentage":10.3399250355435}]
+[
+  {
+    "country": "Algeria",
+    "landAreaPercentage": 3.14979804680612
+  },
+  {
+    "country": "Angola",
+    "landAreaPercentage": 3.28868212079891
+  },
+  {
+    "country": "Benin",
+    "landAreaPercentage": 22.5257183398368
+  },
+  {
+    "country": "Botswana",
+    "landAreaPercentage": 0.457007746193072
+  },
+  {
+    "country": "Burundi",
+    "landAreaPercentage": 36.993769470405
+  },
+  {
+    "country": "Cameroon",
+    "landAreaPercentage": 13.1158638488714
+  },
+  {
+    "country": "Central African Republic",
+    "landAreaPercentage": 2.88933834151979
+  },
+  {
+    "country": "Chad",
+    "landAreaPercentage": 3.57369758576874
+  },
+  {
+    "country": "Comoros",
+    "landAreaPercentage": 34.9274583557227
+  },
+  {
+    "country": "Djibouti",
+    "landAreaPercentage": 0.0690250215703192
+  },
+  {
+    "country": "Equatorial Guinea",
+    "landAreaPercentage": 4.27807486631016
+  },
+  {
+    "country": "Eritrea",
+    "landAreaPercentage": 6.83168316831683
+  },
+  {
+    "country": "Ethiopia",
+    "landAreaPercentage": 14.565
+  },
+  {
+    "country": "Gabon",
+    "landAreaPercentage": 1.26130321729344
+  },
+  {
+    "country": "Ghana",
+    "landAreaPercentage": 20.3041223521139
+  },
+  {
+    "country": "Guinea",
+    "landAreaPercentage": 11.8020511150903
+  },
+  {
+    "country": "Guinea-Bissau",
+    "landAreaPercentage": 10.6685633001422
+  },
+  {
+    "country": "Kenya",
+    "landAreaPercentage": 9.66370313103982
+  },
+  {
+    "country": "Lesotho",
+    "landAreaPercentage": 10.6060606060606
+  },
+  {
+    "country": "Liberia",
+    "landAreaPercentage": 4.98338870431894
+  },
+  {
+    "country": "Libya",
+    "landAreaPercentage": 0.975254896166043
+  },
+  {
+    "country": "Madagascar",
+    "landAreaPercentage": 6.01850259655398
+  },
+  {
+    "country": "Malawi",
+    "landAreaPercentage": 39.2448027153161
+  },
+  {
+    "country": "Mali",
+    "landAreaPercentage": 5.13116809677181
+  },
+  {
+    "country": "Mauritania",
+    "landAreaPercentage": 0.436596487823809
+  },
+  {
+    "country": "Mauritius",
+    "landAreaPercentage": 39.4088669950739
+  },
+  {
+    "country": "Morocco",
+    "landAreaPercentage": 17.3186197624916
+  },
+  {
+    "country": "Mozambique",
+    "landAreaPercentage": 7.18482158752766
+  },
+  {
+    "country": "Namibia",
+    "landAreaPercentage": 0.971711061715799
+  },
+  {
+    "country": "Niger",
+    "landAreaPercentage": 11.9207389279229
+  },
+  {
+    "country": "Nigeria",
+    "landAreaPercentage": 36.2330775058467
+  },
+  {
+    "country": "Rwanda",
+    "landAreaPercentage": 45.5581678151601
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "landAreaPercentage": 8.85416666666667
+  },
+  {
+    "country": "Senegal",
+    "landAreaPercentage": 19.9968836025554
+  },
+  {
+    "country": "Seychelles",
+    "landAreaPercentage": 1.95652173913044
+  },
+  {
+    "country": "Sierra Leone",
+    "landAreaPercentage": 21.8949847603214
+  },
+  {
+    "country": "Somalia",
+    "landAreaPercentage": 1.75343513884018
+  },
+  {
+    "country": "South Africa",
+    "landAreaPercentage": 10.331467574541
+  },
+  {
+    "country": "South Sudan",
+    "landAreaPercentage": 0
+  },
+  {
+    "country": "Sudan",
+    "landAreaPercentage": 7.93686868686869
+  },
+  {
+    "country": "Swaziland",
+    "landAreaPercentage": 10.1744186046512
+  },
+  {
+    "country": "Tanzania",
+    "landAreaPercentage": 13.0955068864303
+  },
+  {
+    "country": "Togo",
+    "landAreaPercentage": 45.2289023717595
+  },
+  {
+    "country": "Tunisia",
+    "landAreaPercentage": 18.1707003089598
+  },
+  {
+    "country": "Uganda",
+    "landAreaPercentage": 33.6624775583483
+  },
+  {
+    "country": "Zambia",
+    "landAreaPercentage": 4.5736423680706
+  },
+  {
+    "country": "Zimbabwe",
+    "landAreaPercentage": 10.3399250355435
+  }
+]

@@ -11,7 +11,7 @@
 
       function dataViz(inputData) {
 
-          console.log(inputData);
+          //console.log(inputData);
 
           var width = 1300,
               height = 500,
