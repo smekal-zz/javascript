@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="css/events-201.css">
+</head>
+<body>
+	<dl>
+		<dt>What are working hours ?</dt>
+		<dd>We are open 24x7</dd>
+		<dt>What are working hours ?</dt>
+		<dd>We are open 24x7</dd>
+		<dt>What are working hours ?</dt>
+		<dd>We are open 24x7</dd>
+		<dt>What are working hours ?</dt>
+		<dd>We are open 24x7</dd>
+	</dl>
+	<script src="js/jquery-2.1.4.js"></script>
+	<script>
+	$(document).ready(function(){
+		var $dd = $("dd");
+		
+		$dd.filter(":nth-child(n+4)").hide();
+
+		$("dl").on("mouseenter", "dt", function(){
+			$dd.slideUp();
+			$(this).next().slideDown();
+		});
+	});
+	
+
+	</script>
+</body>
+</html>
