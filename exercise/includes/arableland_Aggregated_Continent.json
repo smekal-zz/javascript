@@ -1,14 +1,5 @@
 [
   {
-    "year": 1960,
-    "Asia": 0,
-    "Europe": 0,
-    "Africa": 0,
-    "North America": 0,
-    "South America": 0,
-    "Oceania": 0
-  },
-  {
     "year": 1961,
     "Asia": 386049500,
     "Europe": 124100800,
@@ -484,23 +475,5 @@
     "North America": 231052100,
     "South America": 135789100,
     "Oceania": 47300000
-  },
-  {
-    "year": 2014,
-    "Asia": 0,
-    "Europe": 0,
-    "Africa": 0,
-    "North America": 0,
-    "South America": 0,
-    "Oceania": 0
-  },
-  {
-    "year": 2015,
-    "Asia": 0,
-    "Europe": 0,
-    "Africa": 0,
-    "North America": 0,
-    "South America": 0,
-    "Oceania": 0
   }
 ]

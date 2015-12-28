@@ -34,7 +34,7 @@ fs.readFileSync("includes/WDI_Data.csv").toString().split('\n').forEach(function
 		for (var year = 1960, index=4; year <= 2015; year++, index++) {
 			var obj={};
 			obj["year"] = year;
-			obj["landAreaPercentage"] = +rowDataArray[index];
+			obj["landArea"] = +rowDataArray[index];
 		
 			array.push(obj);
 		};
@@ -77,7 +77,6 @@ function getContinent(countryName){
 			return keys[i];
 		}
 	};
-
 }
 
 var totalArablelandAcrossContinents = {};
@@ -117,6 +116,11 @@ for (var i =0 ,len= keys.length ; i < len; i++) {
 	
 	arablelandAcrossContinentsData.push(totalArablelandAcrossContinents[keys[i]]);
 };
+
+// delete last 2 elements for Zero values
+arablelandAcrossContinentsData.splice(0,1);
+arablelandAcrossContinentsData.splice(arablelandAcrossContinentsData.length-1,1);
+arablelandAcrossContinentsData.splice(arablelandAcrossContinentsData.length-1,1);
 
 
 fs.writeFile('includes/arableland_Aggregated_Continent.json', JSON.stringify(arablelandAcrossContinentsData), function (err) {

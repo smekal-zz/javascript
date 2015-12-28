@@ -18,7 +18,22 @@
 					</div>
 				</div><!-- end navbar-header -->		
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Indian Arable-land</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+			              Indian Arable Land <strong class="caret"></strong>
+			            </a>
+			            <ul class="dropdown-menu">
+			              <li>
+				              	<a href="index.html">Arable land (% of land area)
+				              	</a>
+			              </li>
+			              <li>
+			              	<a href="indian_arableland_hectarePP.html">Arable land (hectares per person)
+			              	</a>
+			              </li>
+			              <li><a href="indian_arableland_hectares.html">Arable land (hectares)</a></li>
+			            </ul><!-- end drop-menu -->
+					</li><!-- end dropdown -->
 					<li><a href="african_arableland.html">African Arable-land</a></li>
 					<li><a href="continental_arableland.html">Continental Arable-land</a></li>
 				</ul>
@@ -27,10 +42,13 @@
 		</nav><!-- end navbar -->
 	</div>
 	<div class="row">
-		<h4>Indian Arable Land</h4>
+		<h4>Indian Arable Land (% of land area)</h4>
 	</div>
   	<script src="js/d3.min.js"></script>
   	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/indian_arableland.js"></script>
 </body>
 </html>

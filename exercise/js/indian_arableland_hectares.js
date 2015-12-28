@@ -10,7 +10,7 @@
 
   function dataViz(inputData) {
 
-    var inputData = inputData["Arable land (% of land area)"];
+    var inputData = inputData["Arable land (hectares)"];
 
     var margin = {top: 10, right: 20, bottom: 40, left: 90},
         width = 1360 - margin.left - margin.right,
@@ -26,23 +26,23 @@
         .orient("bottom");
 
     var y = d3.scale.linear()
-        .range([height, height/2 , 0]);
+        .range([height, height/1.2 , 0]);
 
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left")
         .tickPadding(6)
-        .tickFormat(d3.format(",.2f%"));
+        .tickFormat(d3.format("s"));
 
     
     yMax = d3.max(inputData, function(d) { return d.landArea; });
-    y.domain([0, yMax/1.05 ,yMax] );
+    y.domain([0,yMax/1.2 , yMax] );
 
     var tip = d3.tip()
         .attr('class', 'd3-tip')
         .offset([-10, 0])
         .html(function(d) {
-          return "<strong>Arable land (% of land area):</strong> <span style='color:red'>" + d3.format(".5r")(d.landArea) + "</span>";
+          return "<strong>Arable land (hectares):</strong> <span style='color:red'>" + d3.format("s")(d.landArea) + "</span>";
         });
 
     var svg = d3.select(".row").append("svg")
@@ -67,7 +67,7 @@
         .attr("transform", "rotate(-90)")
         .attr("y", -65)
         .style("text-anchor", "end")
-        .text("Arable land (% of land area)");
+        .text("Arable land (hectares)");
 
     svg.selectAll(".bar")
         .data(inputData)

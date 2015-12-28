@@ -10,8 +10,8 @@
 
   function dataViz(inputData) {
 
-    var margin = {top: 10, right: 20, bottom: 30, left: 90},
-        width = 1350 - margin.left - margin.right,
+    var margin = {top: 10, right: 50, bottom: 30, left: 80},
+        width = 1330 - margin.left - margin.right,
         height = 520 - margin.top - margin.bottom;
 
     var x = d3.scale.linear().range([0, width], .1);
@@ -25,7 +25,7 @@
         .tickFormat(d3.format(""));
 
     var y = d3.scale.linear()
-        .range([height, 0]);
+        .range([height, height/1.5 ,  0]);
 
     var yAxis = d3.svg.axis()
         .scale(y)
@@ -57,10 +57,9 @@
         };
       });
 
-    y.domain([
-      d3.min(continents, function(c) { return d3.min(c.values, function(v) { return v.arableland; }); }),
-      d3.max(continents, function(c) { return d3.max(c.values, function(v) { return v.arableland; }); })
-    ]);
+    var yMin = d3.min(continents, function(c) { return d3.min(c.values, function(v) { return v.arableland; }); });
+    var yMax = d3.max(continents, function(c) { return d3.max(c.values, function(v) { return v.arableland; }); });
+    y.domain([yMin , yMax/5 , yMax]);
         
     svg.append("g")
       .attr("class", "x axis")
@@ -90,8 +89,8 @@
       .attr("class" , "lineText")
       .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.value.year) + "," + y(d.value.arableland) + ")"; })
-      .attr("x", 3)
-      .attr("dy", ".7em")
+      .attr("x", -55)
+      .attr("dy", "-0.4em")
       .text(function(d) { return d.name; });
 
 
